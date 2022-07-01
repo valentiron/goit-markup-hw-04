@@ -12,6 +12,7 @@
   --header-logo-color: #000000;
   --btn-hover-color: #188ce8;
   --second-section-color: #2f303a;
+  --icon-color:#AFB1B8;
 
   /* Others */
 
@@ -169,7 +170,14 @@ img {
 }
 
 .header-contact {
+  display: flex;
+  align-items: center;
   color: var(--main-txt-color);
+}
+
+.header-contatc-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-contact-item:not(:last-child) {
@@ -202,11 +210,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .btn-hero {
   padding: 10px 32px;
-  margin-bottom: 106px;
   color: var(--white-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -253,8 +262,10 @@ img {
 
 .main-title {
   width: 696px;
-  margin-top: 106px;
-  margin-bottom: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--set-gap);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -268,8 +279,15 @@ img {
   display: flex;
 }
 
-.skills-item {
-  flex-basis: 270px;
+.skills-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--section-bg-color);
+  margin-bottom: var(--set-gap);
 }
 
 .skills-item:not(:last-child) {
@@ -335,11 +353,10 @@ img {
 }
 
 .person-img {
-  margin-bottom: 30px;
+  margin-bottom: var(--set-gap);
 }
 
 .person-descript {
-  margin-bottom: 30px;
 }
 
 .person-name {
@@ -349,7 +366,41 @@ img {
 }
 
 .person-position {
+  margin-bottom: ;
   color: var(--main-txt-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: var(--set-gap);
+}
+
+.social-item:not(:last-child) {
+margin-right: 10px;
+
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color:var(--icon-color);
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+ color: var(--white-color);
+ background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: currentColor;
 }
 
 .portfolio-btns {
@@ -399,6 +450,13 @@ flex-basis: calc((100% - var(--set-gap) * 3) / 3);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-section {
+  display: flex;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
 
 .footer-logo {
   display: block;
@@ -435,5 +493,50 @@ flex-basis: calc((100% - var(--set-gap) * 3) / 3);
 .footer-contact:focus {
   color: var(--accent-color);
 }
+
+.footer-social {
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.footer-appeal {
+  display: block;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--white-color);
+margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-item:not(:last-child) {
+margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--white-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
 
 /* Footer styles end */
