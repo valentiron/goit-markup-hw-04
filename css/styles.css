@@ -206,6 +206,10 @@ img {
   background-color: var(--second-section-color);
   padding: 200px 0;
   text-align: center;
+  background-image: url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .btn-hero {
