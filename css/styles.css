@@ -204,14 +204,8 @@ img {
 
 .hero {
   background-color: var(--second-section-color);
-}
-
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
+  text-align: center;
 }
 
 .btn-hero {
@@ -262,7 +256,6 @@ img {
 
 .main-title {
   width: 696px;
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--set-gap);
@@ -352,11 +345,8 @@ img {
   letter-spacing: 0.03em;
 }
 
-.person-img {
-  margin-bottom: var(--set-gap);
-}
-
 .person-descript {
+  padding-top: 30px;
 }
 
 .person-name {
@@ -425,7 +415,9 @@ flex-basis: calc((100% - var(--set-gap) * 3) / 3);
 
 .project-description {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-name {
@@ -437,10 +429,41 @@ flex-basis: calc((100% - var(--set-gap) * 3) / 3);
 }
 
 .project-type {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-txt-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: var(--set-gap);
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: var(--icon-color);
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 /* Main section end  */
 
