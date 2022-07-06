@@ -353,7 +353,8 @@ img {
 }
 
 .person-descript {
-  padding-top: 30px;
+  padding-top: var(--set-gap);
+  padding-bottom: var(--set-gap);
 }
 
 .person-name {
@@ -370,7 +371,6 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  margin-bottom: var(--set-gap);
 }
 
 .social-item:not(:last-child) {
@@ -450,7 +450,6 @@ img {
 
 .project-link:hover,
 .project-link:focus {
-  border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -501,6 +500,7 @@ img {
 }
 .footer-section {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -543,10 +543,6 @@ img {
   color: var(--accent-color);
 }
 
-.footer-social {
-  margin-top: 12px;
-  margin-bottom: 40px;
-}
 
 .footer-appeal {
   display: block;
